@@ -1,0 +1,2 @@
+# hatunarezerve
+peglenmek istemiyorum
