@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Hatuna özel</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;400&display=swap');
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2b2b2b;
+  flex-direction: column;
+}
+
+.side {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #bfbfbf;
+  font-family: 'Playfair Display', serif;
+}
+
+.left { left: 25px; }
+.right { right: 25px; }
+
+button {
+  padding: 14px 34px;
+  font-size: 17px;
+  cursor: pointer;
+  border: none;
+  background: #555;
+  color: white;
+  border-radius: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#letter {
+  display: none;
+  max-width: 520px;
+  text-align: center;
+  line-height: 1.8;
+  color: #e0e0e0;
+}
+
+#letter h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  color: #ffffff;
+}
+</style>
+</head>
+
+<body>
+
+<div class="side left">showun sırası değil</div>
+<div class="side right">değil mi</div>
+
+<button id="openBtn" onclick="openLetter()">tıkla</button>
+
+<div id="letter">
+  <h2>elif</h2>
+
+  <p>
+    ...
+  </p>
+
+  <br>
+
+  <a href="https://open.spotify.com/track/2PYyY5r35W9ig2RQZlKfBa"
+     target="_blank"
+     style="background:#444; padding:12px 25px; color:white; border-radius:30px; text-decoration:none; font-size:15px;">
+     Buradan devam et
+  </a>
+
+  <br><br>
+
+  <iframe style="border-radius:12px"
+    src="https://open.spotify.com/embed/track/2PYyY5r35W9ig2RQZlKfBa"
+    width="300" height="80" frameBorder="0"
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+  </iframe>
+
+</div>
+
+<script>
+function openLetter() {
+  document.getElementById("openBtn").style.display = "none";
+  document.getElementById("letter").style.display = "block";
+}
+</script>
+
+</body>
+</html>
