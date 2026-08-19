@@ -9,7 +9,7 @@
 
 body {
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
@@ -54,6 +54,16 @@ button {
   font-weight: 500;
   color: #ffffff;
 }
+
+/* FOTOĞRAF */
+.love-photo {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 18px;
+  margin: 20px 0;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  display: block;
+}
 </style>
 </head>
 
@@ -65,7 +75,16 @@ button {
 <button id="openBtn" onclick="openLetter()">tıkla</button>
 
 <div id="letter">
-  <h2>Kayra naber önce senin ben amınkoyim niye hediyem var diyince niye zorluyon valla babanı pandiklicem neyse onun dışında senin için mükemmel bir site hazırladım buradan istediğim gibi mektuplar bırakabilirim ve  sevdiğin şarkıları dinleyebilirsin</h2>
+
+  <!-- FOTOĞRAF -->
+  <img src="biz.jpg" alt="Biz" class="love-photo">
+
+  <h2>
+    Kayra naber önce senin ben amınkoyim niye hediyem var diyince niye zorluyon
+    valla babanı pandiklicem neyse onun dışında senin için mükemmel bir site
+    hazırladım buradan istediğim gibi mektuplar bırakabilirim ve sevdiğin
+    şarkıları dinleyebilirsin
+  </h2>
 
   <p>
     ...
@@ -81,9 +100,12 @@ button {
 
   <br><br>
 
-  <iframe style="border-radius:12px"
+  <iframe
+    style="border-radius:12px"
     src="https://open.spotify.com/embed/track/2PYyY5r35W9ig2RQZlKfBa"
-    width="300" height="80" frameBorder="0"
+    width="300"
+    height="80"
+    frameBorder="0"
     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
   </iframe>
 
