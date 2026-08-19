@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #2b2b2b;
+  background: #add8e6;
   flex-direction: column;
 }
 
@@ -23,20 +23,25 @@ body {
   top: 50%;
   transform: translateY(-50%);
   font-size: 18px;
-  color: #bfbfbf;
+  color: #000000;
   font-family: 'Playfair Display', serif;
 }
 
-.left { left: 25px; }
-.right { right: 25px; }
+.left {
+  left: 25px;
+}
+
+.right {
+  right: 25px;
+}
 
 button {
   padding: 14px 34px;
   font-size: 17px;
   cursor: pointer;
   border: none;
-  background: #555;
-  color: white;
+  background: #ffffff;
+  color: #000000;
   border-radius: 30px;
   font-family: 'Poppins', sans-serif;
 }
@@ -46,13 +51,14 @@ button {
   max-width: 520px;
   text-align: center;
   line-height: 1.8;
-  color: #e0e0e0;
+  color: #000000;
+  padding: 20px;
 }
 
 #letter h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 500;
-  color: #ffffff;
+  color: #000000;
 }
 
 /* FOTOĞRAF */
@@ -61,8 +67,23 @@ button {
   max-width: 520px;
   border-radius: 18px;
   margin: 20px 0;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
   display: block;
+}
+
+/* SPOTIFY BUTONU */
+.spotify-button {
+  background: #ffffff;
+  padding: 12px 25px;
+  color: #000000;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 15px;
+  display: inline-block;
+}
+
+.spotify-button:hover {
+  background: #f0f0f0;
 }
 </style>
 </head>
@@ -92,9 +113,10 @@ button {
 
   <br>
 
-  <a href="https://open.spotify.com/track/2PYyY5r35W9ig2RQZlKfBa"
+  <!-- SPOTIFY -->
+  <a href="https://open.spotify.com/track/43tIlj5mqSjV4DPuDRb5NQ"
      target="_blank"
-     style="background:#444; padding:12px 25px; color:white; border-radius:30px; text-decoration:none; font-size:15px;">
+     class="spotify-button">
      Buradan devam et
   </a>
 
@@ -102,7 +124,7 @@ button {
 
   <iframe
     style="border-radius:12px"
-    src="https://open.spotify.com/embed/track/2PYyY5r35W9ig2RQZlKfBa"
+    src="https://open.spotify.com/embed/track/43tIlj5mqSjV4DPuDRb5NQ"
     width="300"
     height="80"
     frameBorder="0"
