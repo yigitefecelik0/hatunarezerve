@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -14,7 +15,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #add8e6;
+  background: #000000;
   flex-direction: column;
 }
 
@@ -23,7 +24,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   font-size: 18px;
-  color: #000000;
+  color: #ffffff;
   font-family: 'Playfair Display', serif;
 }
 
@@ -35,55 +36,18 @@ body {
   right: 25px;
 }
 
-button {
-  padding: 14px 34px;
-  font-size: 17px;
-  cursor: pointer;
-  border: none;
-  background: #ffffff;
-  color: #000000;
-  border-radius: 30px;
-  font-family: 'Poppins', sans-serif;
-}
-
 #letter {
-  display: none;
   max-width: 520px;
   text-align: center;
   line-height: 1.8;
-  color: #000000;
+  color: #ffffff;
   padding: 20px;
 }
 
 #letter h2 {
   font-family: 'Playfair Display', serif;
   font-weight: 500;
-  color: #000000;
-}
-
-/* FOTOĞRAF */
-.love-photo {
-  width: 100%;
-  max-width: 520px;
-  border-radius: 18px;
-  margin: 20px 0;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-  display: block;
-}
-
-/* SPOTIFY BUTONU */
-.spotify-button {
-  background: #ffffff;
-  padding: 12px 25px;
-  color: #000000;
-  border-radius: 30px;
-  text-decoration: none;
-  font-size: 15px;
-  display: inline-block;
-}
-
-.spotify-button:hover {
-  background: #f0f0f0;
+  color: #ffffff;
 }
 </style>
 </head>
@@ -93,12 +57,7 @@ button {
 <div class="side left">seni çok</div>
 <div class="side right">seviyorum</div>
 
-<button id="openBtn" onclick="openLetter()">tıkla</button>
-
 <div id="letter">
-
-  <!-- FOTOĞRAF -->
-  <img src="biz2.jpg" alt="Biz" class="love-photo">
 
   <h2>
     iyi geceler zamana ihtiyacın olduğu için whatsapptan yazıp kafa şişirmek istemedim buradan içimi dökücem nasıl olsa rahatsız etmez ve isteyince bakabilirsin diye. seni nasıl bu kadar fazla sevdiğimi bilmiyorum
@@ -112,34 +71,8 @@ button {
     hadi özelden yaz bana
   </p>
 
-  <br>
-
-  <!-- SPOTIFY -->
-  <a href="https://open.spotify.com/track/1KS8f2xRqTC3zflbPpFrcM"
-     target="_blank"
-     class="spotify-button">
-     Buradan devam et
-  </a>
-
-  <br><br>
-
-  <iframe
-    style="border-radius:12px"
-    src="https://open.spotify.com/embed/track/1KS8f2xRqTC3zflbPpFrcM"
-    width="300"
-    height="80"
-    frameBorder="0"
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-  </iframe>
-
 </div>
-
-<script>
-function openLetter() {
-  document.getElementById("openBtn").style.display = "none";
-  document.getElementById("letter").style.display = "block";
-}
-</script>
 
 </body>
 </html>
+```
